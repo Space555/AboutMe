@@ -219,3 +219,4 @@ __marimo__/
 
 /migrations/
 .idea/
+/about/app_main/migrations/
