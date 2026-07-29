@@ -1087,3 +1087,19 @@
 
 }
 
+@media (max-width: 375px) {
+
+    .hero__main-title {
+        font-size: calc(27px + 4vw);
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 3%;
+    }
+
+    .swiper .swiper-button-prev, .swiper .swiper-button-next {
+        top: 97%;
+        height: 4%;
+    }
+}
+
