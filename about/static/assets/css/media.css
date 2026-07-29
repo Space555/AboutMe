@@ -1087,7 +1087,7 @@
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 360px) {
 
     .hero__main-title {
         font-size: calc(27px + 4vw);
