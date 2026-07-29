@@ -17,7 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prosto+One&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/media.css' %}">
 </head>
 <body>
 <div class="wrapper">
@@ -31,13 +33,18 @@
                                  class="header__main-logo-link-pic">
                         </a>
                     </div>
-                    <nav class="header__main-nav">
-                        <a href="#" class="header__main-nav-link link">Портфолио</a>
-                        <a href="#" class="header__main-nav-link link">Технологический стек</a>
-                        <a href="#" class="header__main-nav-link link">Калькулятор</a>
-                        <a href="#" class="header__main-nav-link link">Контакты</a>
+                    <div class="header__main-burger" id="burger">
+                        <span class="header__main-burger-span"></span>
+                        <span class="header__main-burger-span"></span>
+                        <span class="header__main-burger-span"></span>
+                    </div>
+                    <nav class="header__main-nav" id="nav">
+                        <a href="#portfolio" class="header__main-nav-link link">Портфолио</a>
+                        <a href="#stack" class="header__main-nav-link link">Технологический стек</a>
+                        <a href="#calc" class="header__main-nav-link link">Калькулятор</a>
+                        <a href="#contact" class="header__main-nav-link link">Контакты</a>
                     </nav>
-                    <div class="header__main-message">
+                    <div class="header__main-message" id="message">
                         <a href="#" class="header__main-message-link link">Связаться
                             <svg class="header__main-message-link-svg" width="15" height="8" viewBox="0 0 15 8"
                                  fill="none"
@@ -58,15 +65,15 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__main">
-                    <h3 class="footer__main-title">SLAVA SNAKE</h3>
+                    <h3 class="footer__main-title" id="contact">SLAVA SNAKE</h3>
                     <nav class="footer__main-nav">
                         <a href="#" class="footer__main-nav-link link">ОБО МНЕ</a>
-                        <a href="#" class="footer__main-nav-link link">ПОРТФОЛИО</a>
-                        <a href="#" class="footer__main-nav-link link">ТЕХНОЛОГИЧЕСКИЙ СТЕК</a>
-                        <a href="#" class="footer__main-nav-link link">КАЛЬКУЛЯТОР</a>
+                        <a href="#portfolio" class="footer__main-nav-link link">ПОРТФОЛИО</a>
+                        <a href="#stack" class="footer__main-nav-link link">ТЕХНОЛОГИЧЕСКИЙ СТЕК</a>
+                        <a href="#calc" class="footer__main-nav-link link">КАЛЬКУЛЯТОР</a>
                     </nav>
                     <div class="footer__main-contacts">
-                        <a href="mailto:5arhipoff5@mail.ru" class="footer__main-contacts-mail link">
+                        <a href="mailto:info@freepy.ru" class="footer__main-contacts-mail link">
                             <svg class="footer__main-contacts-mail-svg" width="48" height="48" viewBox="0 0 48 48"
                                  fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +81,7 @@
                                 <path d="M8 18L23.1056 25.5528C23.6686 25.8343 24.3314 25.8343 24.8944 25.5528L40 18"
                                       stroke="white"/>
                             </svg>
-                            5arhipoff5@mail.ru
+                            info@freepy.ru
                         </a>
                         <a href="tel:+79994583949" class="footer__main-contacts-phone link">
                             <svg class="footer__main-contacts-phone-svg" width="48" height="48" viewBox="0 0 48 48"
@@ -128,7 +135,7 @@
                 <div class="footer__designer">
                     <p class="footer__designer-text">
                         <span class="footer__designer-text-span">Design by</span>
-                        <a href="" class="footer__designer-text-link link">@zhanna_vad</a>
+                        <a href="https://t.me/zhanna_vad" class="footer__designer-text-link link" target="_blank">@zhanna_vad</a>
                         <svg class="footer__designer-text-svg" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_108_105)">
                                 <path d="M7.5 15C11.6421 15 15 11.6421 15 7.5C15 3.35786 11.6421 0 7.5 0C3.35786 0 0 3.35786 0 7.5C0 11.6421 3.35786 15 7.5 15Z"
@@ -149,5 +156,7 @@
         </footer>
     {% endblock %}
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="{% static 'assets/js/index.js' %}"></script>
 </body>
 </html>

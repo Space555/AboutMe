@@ -1,1 +1,258 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="hero">
+        <div class="container">
+            <div class="hero__main">
+                <p class="hero__main-post">FULLSTACK-РАЗРАБОТЧИК</p>
+                <h1 class="hero__main-title">SLAVA SNAKE</h1>
+                <p class="hero__main-descr">От архитектуры до интерфейса</p>
+                <p class="hero__main-descr">Серверная логика, базы данных, API и фронтенд  - все в одних руках</p>
+                <p class="hero__main-descr last">Чистый код. Сайт без тормозов.</p>
+                <a href="#portfolio" class="hero__main-link">ПОРТФОЛИО
+                    <svg class="hero__main-link-svg" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683418 -0.0976311 0.292893 0.292893C-0.0976311 0.683418 -0.0976311 1.31658 0.292893 1.70711L1 1L1.70711 0.292893ZM17 18C17.5523 18 18 17.5523 18 17L18 8C18 7.44771 17.5523 7 17 7C16.4477 7 16 7.44772 16 8L16 16L8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44771 18 8 18L17 18ZM1 1L0.292893 1.70711L16.2929 17.7071L17 17L17.7071 16.2929L1.70711 0.292893L1 1Z"
+                              fill="#D1F73A"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stack" id="stack">
+        <div class="container">
+            <div class="stack__main">
+                <div class="stack__main-head">
+                    <h3 class="stack__main-head-title">
+                        <span class="stack__main-head-title-span">ПИШУ КОД,</span>
+                        КОТОРЫЙ НЕ&nbsp; КУСАЕТ
+                    </h3>
+                </div>
+                <div class="stack__main-pic">
+                    <img src="{% static 'assets/image/img/skills.png' %}" alt="Stack" class="stack__main-pic-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="portfolio__title" id="portfolio">ПОРТФОЛИО</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <ul class="swiper-slide-list list">
+                            <li class="swiper-slide-list-item">
+                                <div class="swiper-slide-list-item-main">
+                                    <div class="swiper-slide-list-item-main-count">
+                                        <span class="swiper-slide-list-item-main-count-span">01</span>
+                                    </div>
+                                    <div class="swiper-slide-list-item-main-info">
+                                        <p class="swiper-slide-list-item-main-info-cat">Корпоративный сайт</p>
+                                        <h3 class="swiper-slide-list-item-main-info-title">Разработка backend на
+                                            Django</h3>
+                                        <a href="#" class="swiper-slide-list-item-main-info-link link">ПОДРОБНЕЕ
+                                            <svg class="swiper-slide-list-item-main-info-link-svg" width="18"
+                                                 height="18" viewBox="0 0 18 18" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683418 -0.0976311 0.292893 0.292893C-0.0976311 0.683418 -0.0976311 1.31658 0.292893 1.70711L1 1L1.70711 0.292893ZM17 18C17.5523 18 18 17.5523 18 17L18 8C18 7.44771 17.5523 7 17 7C16.4477 7 16 7.44772 16 8L16 16L8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44771 18 8 18L17 18ZM1 1L0.292893 1.70711L16.2929 17.7071L17 17L17.7071 16.2929L1.70711 0.292893L1 1Z"
+                                                      fill="#D1F73A"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide-list-item-main-arrow">
+                                        <svg class="swiper-slide-list-item-main-arrow-svg" width="83" height="30"
+                                             viewBox="0 0 83 30" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M81.4467 16.0538C82.2229 15.2679 82.2149 14.0016 81.429 13.2254L68.6218 0.577279C67.8359 -0.198874 66.5696 -0.190961 65.7935 0.594953C65.0173 1.38087 65.0252 2.64717 65.8111 3.42333L77.1953 14.6661L65.9525 26.0503C65.1764 26.8362 65.1843 28.1025 65.9702 28.8787C66.7561 29.6548 68.0224 29.6469 68.7986 28.861L81.4467 16.0538ZM0.0124512 15.1484L0.0249492 17.1484L80.0362 16.6484L80.0237 14.6484L80.0112 12.6485L-4.68288e-05 13.1485L0.0124512 15.1484Z"
+                                                  fill="#D1F73A"/>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-slide-list-item-main-screenshot">
+                                        <img src="{% static 'assets/image/img/Zoom.png' %}" alt="Screenshot"
+                                             class="swiper-slide-list-item-main-screenshot-pic">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="swiper-slide-list list">
+                            <li class="swiper-slide-list-item">
+                                <div class="swiper-slide-list-item-main">
+                                    <div class="swiper-slide-list-item-main-count">
+                                        <span class="swiper-slide-list-item-main-count-span">02</span>
+                                    </div>
+                                    <div class="swiper-slide-list-item-main-info">
+                                        <p class="swiper-slide-list-item-main-info-cat">Калькулятор подбора
+                                            персонала</p>
+                                        <h3 class="swiper-slide-list-item-main-info-title">Разработка backend и frontend
+                                            на
+                                            Django</h3>
+                                        <a href="#" class="swiper-slide-list-item-main-info-link link">ПОДРОБНЕЕ
+                                            <svg class="swiper-slide-list-item-main-info-link-svg" width="18"
+                                                 height="18" viewBox="0 0 18 18" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683418 -0.0976311 0.292893 0.292893C-0.0976311 0.683418 -0.0976311 1.31658 0.292893 1.70711L1 1L1.70711 0.292893ZM17 18C17.5523 18 18 17.5523 18 17L18 8C18 7.44771 17.5523 7 17 7C16.4477 7 16 7.44772 16 8L16 16L8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44771 18 8 18L17 18ZM1 1L0.292893 1.70711L16.2929 17.7071L17 17L17.7071 16.2929L1.70711 0.292893L1 1Z"
+                                                      fill="#D1F73A"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide-list-item-main-arrow">
+                                        <svg class="swiper-slide-list-item-main-arrow-svg" width="83" height="30"
+                                             viewBox="0 0 83 30" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M81.4467 16.0538C82.2229 15.2679 82.2149 14.0016 81.429 13.2254L68.6218 0.577279C67.8359 -0.198874 66.5696 -0.190961 65.7935 0.594953C65.0173 1.38087 65.0252 2.64717 65.8111 3.42333L77.1953 14.6661L65.9525 26.0503C65.1764 26.8362 65.1843 28.1025 65.9702 28.8787C66.7561 29.6548 68.0224 29.6469 68.7986 28.861L81.4467 16.0538ZM0.0124512 15.1484L0.0249492 17.1484L80.0362 16.6484L80.0237 14.6484L80.0112 12.6485L-4.68288e-05 13.1485L0.0124512 15.1484Z"
+                                                  fill="#D1F73A"/>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-slide-list-item-main-screenshot">
+                                        <img src="{% static 'assets/image/img/Savvas.png' %}" alt="Screenshot"
+                                             class="swiper-slide-list-item-main-screenshot-pic">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="swiper-slide-list list">
+                            <li class="swiper-slide-list-item">
+                                <div class="swiper-slide-list-item-main">
+                                    <div class="swiper-slide-list-item-main-count">
+                                        <span class="swiper-slide-list-item-main-count-span">03</span>
+                                    </div>
+                                    <div class="swiper-slide-list-item-main-info">
+                                        <p class="swiper-slide-list-item-main-info-cat">Сайт по подборам услуг в
+                                            разработке</p>
+                                        <h3 class="swiper-slide-list-item-main-info-title">Разработка backend и frontend
+                                            на
+                                            Django</h3>
+                                        <a href="#" class="swiper-slide-list-item-main-info-link link">ПОДРОБНЕЕ
+                                            <svg class="swiper-slide-list-item-main-info-link-svg" width="18"
+                                                 height="18" viewBox="0 0 18 18" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.70711 0.292893C1.31658 -0.0976311 0.683418 -0.0976311 0.292893 0.292893C-0.0976311 0.683418 -0.0976311 1.31658 0.292893 1.70711L1 1L1.70711 0.292893ZM17 18C17.5523 18 18 17.5523 18 17L18 8C18 7.44771 17.5523 7 17 7C16.4477 7 16 7.44772 16 8L16 16L8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44771 18 8 18L17 18ZM1 1L0.292893 1.70711L16.2929 17.7071L17 17L17.7071 16.2929L1.70711 0.292893L1 1Z"
+                                                      fill="#D1F73A"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide-list-item-main-arrow">
+                                        <svg class="swiper-slide-list-item-main-arrow-svg" width="83" height="30"
+                                             viewBox="0 0 83 30" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M81.4467 16.0538C82.2229 15.2679 82.2149 14.0016 81.429 13.2254L68.6218 0.577279C67.8359 -0.198874 66.5696 -0.190961 65.7935 0.594953C65.0173 1.38087 65.0252 2.64717 65.8111 3.42333L77.1953 14.6661L65.9525 26.0503C65.1764 26.8362 65.1843 28.1025 65.9702 28.8787C66.7561 29.6548 68.0224 29.6469 68.7986 28.861L81.4467 16.0538ZM0.0124512 15.1484L0.0249492 17.1484L80.0362 16.6484L80.0237 14.6484L80.0112 12.6485L-4.68288e-05 13.1485L0.0124512 15.1484Z"
+                                                  fill="#D1F73A"/>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-slide-list-item-main-screenshot">
+                                        <img src="{% static 'assets/image/img/Rectangle.png' %}" alt="Screenshot"
+                                             class="swiper-slide-list-item-main-screenshot-pic">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calc">
+        <div class="container">
+            <div class="calc__main">
+                <h2 class="calc__main-title" id="calc">КАЛЬКУЛЯТОР</h2>
+                <p class="calc__main-descr">Посчитайте стоимость и оставьте заявку в один клик!</p>
+            </div>
+            <form class="calc__form" method="post" enctype="multipart/form-data" id="calculatorForm">
+                {% csrf_token %}
+                <h3 class="calc__form-head">ВЫБЕРИТЕ ТИП САЙТА</h3>
+                <div class="calc__form--block">
+                    {% for category in categories %}
+                        <label for="id_category_{{ category.id }}" class="calc__form--block-label">
+                            <input type="radio" class="calc__form--block-input calc-basic"
+                                   id="id_category_{{ category.id }}"
+                                   name="basic_id" value="{{ category.id }}"
+                                   data-price="{{ category.price }}">
+                            <span class="calc__form--block-span"></span>
+                            <span class="calc__form--block-text">{{ category.title }}</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.44605 18.8462C4.25078 19.0414 4.25078 19.358 4.44605 19.5533C4.64131 19.7485 4.9579 19.7485 5.15317 19.5533L4.79961 19.1997L4.44605 18.8462ZM19.5538 5.15335C19.749 4.95809 19.749 4.64152 19.5538 4.44626C19.3585 4.251 19.0419 4.251 18.8466 4.44626L19.2002 4.7998L19.5538 5.15335ZM19.2002 4.7998L18.8466 4.44626L4.44605 18.8462L4.79961 19.1997L5.15317 19.5533L19.5538 5.15335L19.2002 4.7998Z"
+                                      fill="#D1F73A"/>
+                                <path d="M5.15317 4.44577C4.9579 4.25051 4.64131 4.25051 4.44605 4.44577C4.25078 4.64103 4.25078 4.9576 4.44605 5.15286L4.79961 4.79932L5.15317 4.44577ZM18.8466 19.5528C19.0419 19.748 19.3585 19.748 19.5538 19.5528C19.749 19.3575 19.749 19.0409 19.5538 18.8457L19.2002 19.1992L18.8466 19.5528ZM19.2002 19.1992L19.5538 18.8457L5.15317 4.44577L4.79961 4.79932L4.44605 5.15286L18.8466 19.5528L19.2002 19.1992Z"
+                                      fill="#D1F73A"/>
+                            </svg>
+                        </label>
+                    {% endfor %}
+                </div>
+                <div class="calc__form-add">
+                    <h2 class="calc__form-add-head">ДОПОЛНИТЕЛЬНО</h2>
+                    <div class="calc__form-add-choice">
+                        {% for additional in additionally %}
+                            <div class="calc__form-add-choice-block">
+                                <label for="id_additionally_{{ additional.id }}" class="calc__form-add-choice-label">
+                                    <input type="checkbox" class="calc__form-add-choice-input calc-additional"
+                                           name="additionally_ids" value="{{ additional.id }}"
+                                           id="id_additionally_{{ additional.id }}" data-price="{{ additional.price }}">
+                                    <span class="calc__form-add-choice-span"></span>
+                                    <span class="calc__form-add-choice-span-text">{{ additional.title }}</span>
+                                </label>
+                                <p class="calc__form-add-choice-price">+ {{ additional.price }} ₽</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="calc__form-total">
+                    <p class="calc__form-total-text">Итоговая стоимость</p>
+                    <p class="calc__form-total-price" id="totalPrice">0 ₽</p>
+                </div>
+                <button class="calc__form-modal-btn btn" type="button" data-modal="consultation">
+                    ОСТАВИТЬ ЗАЯВКУ
+                    <svg class="calc__form-modal-btn-svg" width="15" height="8" viewBox="0 0 15 8" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 3.18213C0.223858 3.18213 0 3.40599 0 3.68213C0 3.95827 0.223858 4.18213 0.5 4.18213V3.68213V3.18213ZM14.8536 4.03568C15.0488 3.84042 15.0488 3.52384 14.8536 3.32858L11.6716 0.146595C11.4763 -0.0486672 11.1597 -0.0486672 10.9645 0.146595C10.7692 0.341857 10.7692 0.65844 10.9645 0.853702L13.7929 3.68213L10.9645 6.51056C10.7692 6.70582 10.7692 7.0224 10.9645 7.21766C11.1597 7.41293 11.4763 7.41293 11.6716 7.21766L14.8536 4.03568ZM0.5 3.68213V4.18213H14.5V3.68213V3.18213H0.5V3.68213Z"
+                              fill="#222222"/>
+                    </svg>
+                </button>
+                <div class="calc__form-modal">
+                    <svg class="calc__form-modal-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.44629 18.8462C4.25102 19.0414 4.25102 19.358 4.44629 19.5533C4.64156 19.7485 4.95815 19.7485 5.15341 19.5533L4.79985 19.1997L4.44629 18.8462ZM19.554 5.15335C19.7493 4.95809 19.7493 4.64152 19.554 4.44626C19.3587 4.251 19.0421 4.251 18.8469 4.44626L19.2004 4.7998L19.554 5.15335ZM19.2004 4.7998L18.8469 4.44626L4.44629 18.8462L4.79985 19.1997L5.15341 19.5533L19.554 5.15335L19.2004 4.7998Z"
+                              fill="white"/>
+                        <path d="M5.15341 4.44577C4.95815 4.25051 4.64156 4.25051 4.44629 4.44577C4.25102 4.64103 4.25102 4.9576 4.44629 5.15286L4.79985 4.79932L5.15341 4.44577ZM18.8469 19.5528C19.0421 19.748 19.3587 19.748 19.554 19.5528C19.7493 19.3575 19.7493 19.0409 19.554 18.8457L19.2004 19.1992L18.8469 19.5528ZM19.2004 19.1992L19.554 18.8457L5.15341 4.44577L4.79985 4.79932L4.44629 5.15286L18.8469 19.5528L19.2004 19.1992Z"
+                              fill="white"/>
+                    </svg>
+                    <h2 class="calc__form-modal-title">Заявка</h2>
+                    <p class="calc__form-modal-descr">Заполни форму ниже, чтобы оставить заявку</p>
+                    <div class="calc__form-modal-info">
+                        {{ form.name }}
+                        {{ form.phone }}
+                        {{ form.email }}
+                    </div>
+                    <label for="id_agree" class="calc__form-modal-agree">
+                        {{ form.agree }}
+                        <span class="calc__form-modal-agree-span"></span>
+                        <span class="calc__form-modal-agree-span-text">Согласен с политикой конфиденциальности</span>
+                    </label>
+                    <div class="calc__form-modal-comment">
+                        <p class="calc__form-modal-comment-descr">Что-то особенное? Оставьте комментарий</p>
+                        <h3 class="calc__form-modal-comment-title">КОММЕНТАРИЙ</h3>
+                        {{ form.comment }}
+                    </div>
+                    <button class="calc__form-btn btn" type="submit" id="submitOrder">
+                        Отправить заявку
+                    </button>
+                    <div id="formErrors" style="color: red; margin-top: 10px; display: none;"></div>
+                </div>
+                <div class="calc__form-modal-overlay"></div>
+            </form>
+        </div>
+    </section>
+
+{% endblock %}
