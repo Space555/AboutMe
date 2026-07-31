@@ -9,6 +9,15 @@
     {% block seo %}
         <meta name="keywords" content="">
         <meta name="description" content="">
+        <meta property="og:title" content="Разработка на фреймворке Django"/>
+        <meta property="og:description" content="Пишу код, который не кусает"/>
+        <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+        <meta property="og:url" content="{% block og_url %}{{ request.build_absolute_uri }}{% endblock %}">
+        <meta property="og:image"
+              content="{% block og_image %}{% static 'assets/image/OG_img.png' %}{% endblock %}">
+        <meta property="og:site_name" content="{% block og_site_name %}SlavaSnake{% endblock %}">
+        <meta property="og:locale" content="ru_RU">
+
     {% endblock %}
     <title>{% block title %}SlavaSnake{% endblock %}</title>
     <link rel="icon" href="{% static 'assets/image/svg/favicon.svg' %}" type="image/svg+xml" sizes="any">

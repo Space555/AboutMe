@@ -1072,8 +1072,11 @@
         font-size: calc(11px + 1vw);
     }
 
-    .calc__form-modal-comment-textarea,
-    .calc__form-btn {
+    .calc__form-modal-comment-textarea {
+        width: 80%;
+    }
+
+    .calc__form-btn  {
         width: 100%;
     }
 
@@ -1082,5 +1085,21 @@
         right: 3%;
     }
 
+}
+
+@media (max-width: 360px) {
+
+    .hero__main-title {
+        font-size: calc(25px + 4vw);
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 12%;
+    }
+
+    .swiper .swiper-button-prev, .swiper .swiper-button-next {
+        top: 88%;
+        height: 4%;
+    }
 }
 
